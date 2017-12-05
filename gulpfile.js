@@ -22,7 +22,7 @@ var path = {
         js: 'build/js/',
         css: 'build/css/',
         img: 'build/img/',
-        php: 'build/php/'
+        php: 'build/form/'
     },
     src: { //Пути откуда брать исходники
         html: 'src/*.html', //Синтаксис src/*.html говорит gulp что мы хотим взять все файлы с расширением .html
@@ -69,6 +69,14 @@ gulp.task('js:build', function () {
         .pipe(reload({stream: true})); //И перезагрузим сервер
 });
 
+gulp.task('php:build', function () {
+    gulp.src(path.src.php) //Найдем наш main файл
+        .pipe(sourcemaps.init()) //Инициализируем sourcemap
+        .pipe(sourcemaps.write()) //Пропишем карты
+        .pipe(gulp.dest(path.build.php)) //Выплюнем готовый файл в build
+        .pipe(reload({stream: true})); //И перезагрузим сервер
+});
+
 gulp.task('style:build', function () {
     gulp.src(path.src.style) //Выберем наш main.scss
         .pipe(sourcemaps.init()) //То же самое что и с js
@@ -97,7 +105,8 @@ gulp.task('build', [
     'html:build',
     'js:build',
     'style:build',
-    'image:build'
+    'image:build',
+    'php:build',
 ]);
 
 gulp.task('watch', function(){
@@ -112,6 +121,9 @@ gulp.task('watch', function(){
     });
     watch([path.watch.img], function(event, cb) {
         gulp.start('image:build');
+    });
+    watch([path.watch.php], function(event, cb) {
+        gulp.start('php:build');
     });
 });
 
