@@ -1,4 +1,5 @@
 node_modules
+build
 /.idea
 /.idea/mariskas.github.io.iml
 /.idea/modules.xml
