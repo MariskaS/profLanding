@@ -381,20 +381,20 @@
                     <div class="app-card">
                         <a href="#portfolioModal1" data-toggle="modal">
                             <div class="app-card__img">
+                                <div class="app-card__img-overlay">
+                                    <span>Подробнее</span>
+                                </div>
                                 <img src="img/portfolio/item1min.jpg">
                                 <span class="app-card-title">Однокомнатная квартира в Кудрово</span>
                             </div>
                             <div class="app-card__content">
-                                <ul class="app-card__detail list-inline">
-                                    <li>
-                                        <i class="fa fa-arrows-v u-rotate-45"></i><span>35 м²</span>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-clock-o"></i><span>3 дня</span>
-                                    </li>
-                                </ul>
-                                <p><strong>Работы</strong>&nbsp;43 160&nbsp;₽</p>
-                                <p><strong>Материалы</strong>&nbsp;42 954,50 &nbsp;₽</p>
+                                <p><strong>Работы</strong>&nbsp;28 765&nbsp;₽</p>
+                                <p><strong>Материалы</strong>&nbsp;29 687 &nbsp;₽</p>
+                                <p><strong>Срок</strong>&nbsp;3 дня</p>
+                                <p><strong>Площадь</strong>&nbsp;35 м²</p>
+                                <p><strong>Площадь стен</strong>&nbsp;90 м²</p>
+                                <p><strong>Площадь откосов</strong>&nbsp;17,9 м²</p>
+                                <button class="btn btn-info u-btn-block-md u-margin-top-base u-show-mob">Подробнее</button>
                             </div>
                         </a>
                     </div>
@@ -405,20 +405,20 @@
                     <div class="app-card">
                         <a href="#portfolioModal2" data-toggle="modal">
                             <div class="app-card__img">
+                                <div class="app-card__img-overlay">
+                                    <span>Подробнее</span>
+                                </div>
                                 <img src="img/portfolio/item2min.jpg">
                                 <span class="app-card-title">Двухкомнатная квартира в Пушкине</span>
                             </div>
                             <div class="app-card__content">
-                                <ul class="app-card__detail list-inline">
-                                    <li>
-                                        <i class="fa fa-arrows-v u-rotate-45"></i><span>71 м²</span>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-clock-o"></i><span>4 дня</span>
-                                    </li>
-                                </ul>
                                 <p><strong>Работы</strong>&nbsp;51 233&nbsp;₽</p>
-                                <p><strong>Материалы</strong>&nbsp;55 850&nbsp;₽</p>
+                                <p><strong>Материалы</strong>&nbsp;56 336&nbsp;₽</p>
+                                <p><strong>Срок</strong>&nbsp;4 дня</p>
+                                <p><strong>Площадь</strong>&nbsp;71 м²</p>
+                                <p><strong>Площадь стен</strong>&nbsp;166,34 м²</p>
+                                <p><strong>Площадь откосов</strong>&nbsp;31,8 м²</p>
+                                <button class="btn btn-info u-btn-block-md u-margin-top-base u-show-mob">Подробнее</button>
                             </div>
                         </a>
                     </div>
@@ -429,26 +429,24 @@
                     <div class="app-card app-last">
                         <a href="#portfolioModal3" data-toggle="modal">
                             <div class="app-card__img">
+                                <div class="app-card__img-overlay">
+                                    <span>Подробнее</span>
+                                </div>
                                 <img src="img/portfolio/item3min.jpg">
                                 <span class="app-card-title">Коттедж в деревне Вертемяги</span>
                             </div>
                             <div class="app-card__content">
-                                <ul class="app-card__detail list-inline">
-                                    <li>
-                                        <i class="fa fa-arrows-v u-rotate-45"></i><span>113 м²</span>
-                                    </li>
-                                    <li>
-                                        <i class="fa fa-clock-o"></i><span>6 дней</span>
-                                    </li>
-                                </ul>
                                 <p><strong>Работы</strong>&nbsp;76 480&nbsp;₽</p>
-                                <p><strong>Материалы</strong>&nbsp;70 412&nbsp;₽</p>
+                                <p><strong>Материалы</strong>&nbsp;71 254&nbsp;₽</p>
+                                <p><strong>Срок</strong>&nbsp;6 дня</p>
+                                <p><strong>Площадь</strong>&nbsp;113 м²</p>
+                                <p><strong>Площадь стен</strong>&nbsp;256 м²</p>
+                                <p><strong>Площадь откосов</strong>&nbsp;53,5 м²</p>
+                                <button class="btn btn-info u-btn-block-md u-margin-top-base u-show-mob">Подробнее</button>
                             </div>
                         </a>
                     </div>
                 </div>
-    
-    
             </div>
         </div>
     </section>
@@ -665,14 +663,14 @@
 
 <!-- Portfolio Modal 1 -->
 <div class="app-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+            <div class="rl">
+            </div>
+        </div>
+    </div>
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
             <div class="container">
                 <div class="modal-body">
                     <h2>Однокомнатная квартира в Кудрово</h2>
@@ -703,27 +701,34 @@
                         </div>
 
                         <!-- Controls -->
-                        <a class="left carousel-control" href="#carouselModal1" role="button" data-slide="prev">
+                        <a class="left carousel-control"
+                           href="#carouselModal1"
+                           role="button"
+                           data-slide="prev">
                             <span class="fa fa-angle-left" aria-hidden="true"></span>
                         </a>
-                        <a class="right carousel-control" href="#carouselModal1" role="button" data-slide="next">
+                        <a class="right carousel-control"
+                           href="#carouselModal1"
+                           role="button"
+                           data-slide="next">
                             <span class="fa fa-angle-right" aria-hidden="true"></span>
                         </a>
                     </div>
 
                     <div class="app-modal__info">
                         <div class="app-price">
-                            <p><strong>Стоимость работ:</strong> 43 160&nbsp;₽</p>
-                            <p><strong>Стоимость материалов:</strong> 42 955&nbsp;₽</p>
+                            <p><strong>Стоимость работ:</strong> 28 765&nbsp;₽</p>
+                            <p><strong>Стоимость материалов:</strong> 29 687&nbsp;₽</p>
                             <p><strong>Срок:</strong> 3 дня</p>
                             <p><strong>Площадь:</strong> 35 м²</p>
+                            <p><strong>Площадь стен:</strong> 90 м²</p>
+                            <p><strong>Площадь откосов:</strong> 17,9 м²</p>
                         </div>
                         <p class="app-description">
-                            <!-- Здесь описание проекта -->
-                            На объекте были проблемы в работе лифта. Чтобы не затягивать, сроки мы самостоятельно
-                            подняли по лестнице всё необходимое оборудование и организовали подъем материалов. Объект
-                            сдан точно в срок!
-
+                            На объекте были проблемы в работе лифта.
+                            Чтобы не затягивать, сроки мы самостоятельно
+                            подняли по лестнице всё необходимое оборудование
+                            и организовали подъем материалов. Объект сдан точно в срок!
                         </p>
                     </div>
 
@@ -747,14 +752,14 @@
                         <tr>
                             <td>Профиль примыкания оконный самоклеящийся с сеткой 6 мм 2.4 м пластиковый</td>
                             <td class="text-right u-nowrap">7</td>
-                            <td class="text-right u-nowrap">152&nbsp;₽</td>
-                            <td class="text-right u-nowrap">1 064&nbsp;₽</td>
+                            <td class="text-right u-nowrap">122&nbsp;₽</td>
+                            <td class="text-right u-nowrap">854&nbsp;₽</td>
                         </tr>
                         <tr>
                             <td>Профиль маячковый Стандарт 6 мм 3 м 0.50 мм</td>
-                            <td class="text-right u-nowrap">76</td>
+                            <td class="text-right u-nowrap">49</td>
                             <td class="text-right u-nowrap">38&nbsp;₽</td>
-                            <td class="text-right u-nowrap">2 888&nbsp;₽</td>
+                            <td class="text-right u-nowrap">1 862&nbsp;₽</td>
                         </tr>
                         <tr>
                             <td>Грунт для впитывающих оснований Миттельгрунд концентрат Кнауф 10 кг</td>
@@ -770,21 +775,21 @@
                         </tr>
                         <tr>
                             <td>Лента малярная Unibob 50 мм х 50 м</td>
-                            <td class="text-right u-nowrap">3</td>
+                            <td class="text-right u-nowrap">2</td>
                             <td class="text-right u-nowrap">115&nbsp;₽</td>
-                            <td class="text-right u-nowrap">345&nbsp;₽</td>
+                            <td class="text-right u-nowrap">230&nbsp;₽</td>
                         </tr>
                         <tr>
                             <td>Мешок полипропиленовый зеленый 50х90 см</td>
-                            <td class="text-right u-nowrap">40</td>
+                            <td class="text-right u-nowrap">20</td>
                             <td class="text-right u-nowrap">6&nbsp;₽</td>
-                            <td class="text-right u-nowrap">240&nbsp;₽</td>
+                            <td class="text-right u-nowrap">120&nbsp;₽</td>
                         </tr>
                         <tr>
                             <td>Хлопчатобумажные перчатки 4 нити с ПВХ покрытием</td>
-                            <td class="text-right u-nowrap">15</td>
+                            <td class="text-right u-nowrap">10</td>
                             <td class="text-right u-nowrap">11,5&nbsp;₽</td>
-                            <td class="text-right u-nowrap">172,5&nbsp;₽</td>
+                            <td class="text-right u-nowrap">115&nbsp;₽</td>
                         </tr>
                         <tr>
                             <td>Валик полиакрил Hardex 250 мм с рукояткой</td>
@@ -794,15 +799,15 @@
                         </tr>
                         <tr>
                             <td>Профиль углозащитный штукатурный сетчатый 31х31 мм 3 м оцинкованный</td>
-                            <td class="text-right u-nowrap">17</td>
+                            <td class="text-right u-nowrap">10</td>
                             <td class="text-right u-nowrap">58&nbsp;₽</td>
-                            <td class="text-right u-nowrap">986&nbsp;₽</td>
+                            <td class="text-right u-nowrap">580&nbsp;₽</td>
                         </tr>
                         <tr>
                             <td>Штукатурка гипсовая машинная Knauf МП-75 30 кг</td>
-                            <td class="text-right u-nowrap">91</td>
-                            <td class="text-right u-nowrap">335&nbsp;₽</td>
-                            <td class="text-right u-nowrap">30 485&nbsp;₽</td>
+                            <td class="text-right u-nowrap">56</td>
+                            <td class="text-right u-nowrap">342&nbsp;₽</td>
+                            <td class="text-right u-nowrap">19 152&nbsp;₽</td>
                         </tr>
                         <tr>
                             <td>Бетоконтакт Кнауф 20 кг</td>
@@ -814,7 +819,7 @@
                         <tfoot>
                         <tr>
                             <td colspan="4"
-                                class="text-right u-nowrap">Итого: 42 954,50&nbsp;₽
+                                class="text-right u-nowrap">Итого: 29 687&nbsp;₽
                             </td>
                         </tr>
                         </tfoot>
@@ -833,9 +838,9 @@
                         <tbody>
                         <tr>
                             <td>Гипсовая штукатурка стен под маяк слоем до 30мм.</td>
-                            <td class="text-right u-nowrap">141 м²</td>
+                            <td class="text-right u-nowrap">90 м²</td>
                             <td class="text-right u-nowrap">250&nbsp;₽</td>
-                            <td class="text-right u-nowrap">35 250&nbsp;₽</td>
+                            <td class="text-right u-nowrap">22 500&nbsp;₽</td>
                         </tr>
                         <tr>
                             <td>Гипсовая штукатурка стен под маяк шириной менее 50см.</td>
@@ -845,15 +850,15 @@
                         </tr>
                         <tr>
                             <td>Гипсовая штукатурка откосов.</td>
-                            <td class="text-right u-nowrap">14,7 м. пог</td>
+                            <td class="text-right u-nowrap">10 м. пог</td>
                             <td class="text-right u-nowrap">350&nbsp;₽</td>
-                            <td class="text-right u-nowrap">5 145&nbsp;₽</td>
+                            <td class="text-right u-nowrap">3 500&nbsp;₽</td>
                         </tr>
                         </tbody>
                         <tfoot>
                         <tr>
                             <td colspan="4"
-                                class="text-right u-nowrap">Итого: 43 160&nbsp;₽
+                                class="text-right u-nowrap">Итого: 28 765&nbsp;₽
                             </td>
                         </tr>
                         </tfoot>
@@ -866,14 +871,14 @@
 
 <!-- Portfolio Modal 2 -->
 <div class="app-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+            <div class="rl">
+            </div>
+        </div>
+    </div>
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
             <div class="container">
                 <div class="modal-body">
                     <h2>Двухкомнатная квартира в Пушкине</h2>
@@ -927,9 +932,11 @@
                     <div class="app-modal__info">
                         <div class="app-price">
                             <p><strong>Стоимость работ:</strong> 51 233&nbsp;₽</p>
-                            <p><strong>Стоимость материалов:</strong> 55 850&nbsp;₽</p>
+                            <p><strong>Стоимость материалов:</strong> 56 336&nbsp;₽</p>
                             <p><strong>Срок:</strong> 4 дня</p>
                             <p><strong>Площадь:</strong> 71 м²</p>
+                            <p><strong>Площадь стен:</strong> 166,34 м²</p>
+                            <p><strong>Площадь откосов:</strong> 31,8 м²</p>
                         </div>
                         <p class="app-description">
                             Как и в любой новостройке, тут не обошлось без сложностей. Перебои в подаче электроэнергии
@@ -963,90 +970,81 @@
                         </tr>
                         <tr>
                             <td>Профиль примыкания оконный самоклеящийся с сеткой 6 мм 2.4 м пластиковый</td>
+                            <td class="text-right u-nowrap">9</td>
+                            <td class="text-right u-nowrap">122&nbsp;₽</td>
+                            <td class="text-right u-nowrap">1 098&nbsp;₽</td>
+                        </tr>
+                        <tr>
+                            <td>Профиль маячковый Стандарт 6 мм 3 м 0.50 мм</td>
                             <td class="text-right u-nowrap">90</td>
                             <td class="text-right u-nowrap">38&nbsp;₽</td>
                             <td class="text-right u-nowrap">3 420&nbsp;₽</td>
                         </tr>
-
                         <tr>
                             <td>Грунт для впитывающих оснований Миттельгрунд концентрат Кнауф 10 кг</td>
                             <td class="text-right u-nowrap">1</td>
                             <td class="text-right u-nowrap">2 082&nbsp;₽</td>
                             <td class="text-right u-nowrap">2 082&nbsp;₽</td>
                         </tr>
-
-
                         <tr>
                             <td>Пленка парниковая полиэтиленовая 100 мк 1.5 м рукав</td>
                             <td class="text-right u-nowrap">5</td>
                             <td class="text-right u-nowrap">53&nbsp;₽</td>
                             <td class="text-right u-nowrap">265&nbsp;₽</td>
                         </tr>
-
                         <tr>
                             <td>Лента малярная Unibob 50 мм х 50 м</td>
                             <td class="text-right u-nowrap">3</td>
                             <td class="text-right u-nowrap">115&nbsp;₽</td>
                             <td class="text-right u-nowrap">345&nbsp;₽</td>
                         </tr>
-
                         <tr>
                             <td>Мешок полипропиленовый зеленый 50х90 см</td>
                             <td class="text-right u-nowrap">50</td>
                             <td class="text-right u-nowrap">6&nbsp;₽</td>
                             <td class="text-right u-nowrap">300&nbsp;₽</td>
                         </tr>
-
                         <tr>
                             <td>Хлопчатобумажные перчатки 4 нити с ПВХ покрытием</td>
                             <td class="text-right u-nowrap">15</td>
-                            <td class="text-right u-nowrap">11,5&nbsp;₽</td>
-                            <td class="text-right u-nowrap">172,5&nbsp;₽</td>
+                            <td class="text-right u-nowrap">11&nbsp;₽</td>
+                            <td class="text-right u-nowrap">165&nbsp;₽</td>
                         </tr>
-
                         <tr>
                             <td>Слив для унитаза гофрированный Эконом</td>
                             <td class="text-right u-nowrap">1</td>
                             <td class="text-right u-nowrap">154&nbsp;₽</td>
                             <td class="text-right u-nowrap">154&nbsp;₽</td>
                         </tr>
-
                         <tr>
                             <td>Валик полиакрил Hardex 250 мм с рукояткой</td>
                             <td class="text-right u-nowrap">2</td>
                             <td class="text-right u-nowrap">321&nbsp;₽</td>
                             <td class="text-right u-nowrap">642&nbsp;₽</td>
                         </tr>
-
                         <tr>
                             <td>Профиль углозащитный штукатурный сетчатый 31х31 мм 3 м оцинкованный</td>
                             <td class="text-right u-nowrap">21</td>
                             <td class="text-right u-nowrap">58&nbsp;₽</td>
                             <td class="text-right u-nowrap">1 218&nbsp;₽</td>
                         </tr>
-
-
                         <tr>
                             <td>Штукатурка гипсовая машинная Knauf МП-75 30 кг</td>
                             <td class="text-right u-nowrap">109</td>
-                            <td class="text-right u-nowrap">335&nbsp;₽</td>
-                            <td class="text-right u-nowrap">36 515&nbsp;₽</td>
+                            <td class="text-right u-nowrap">342&nbsp;₽</td>
+                            <td class="text-right u-nowrap">37 278&nbsp;₽</td>
                         </tr>
-
-
                         <tr>
                             <td>Бетоконтакт Кнауф 20 кг</td>
                             <td class="text-right u-nowrap">2</td>
                             <td class="text-right u-nowrap">3 100&nbsp;₽</td>
                             <td class="text-right u-nowrap">6 200&nbsp;₽</td>
                         </tr>
-
-
                         </tbody>
                         <tfoot>
                         <tr>
                             <td colspan="4"
-                                class="text-right u-nowrap">Итого: 55 850&nbsp;₽
+                                class="text-right u-nowrap">Итого: 56 336&nbsp;₽
                             </td>
                         </tr>
                         </tfoot>
@@ -1065,21 +1063,21 @@
                         <tbody>
                         <tr>
                             <td>Гипсовая штукатурка стен под маяк слоем до 30мм.</td>
-                            <td class="text-right u-nowrap">141 м²</td>
-                            <td class="text-right u-nowrap">250&nbsp;₽</td>
-                            <td class="text-right u-nowrap">35 250&nbsp;₽</td>
+                            <td class="text-right u-nowrap">166,34 м²</td>
+                            <td class="text-right u-nowrap">240&nbsp;₽</td>
+                            <td class="text-right u-nowrap">39 921&nbsp;₽</td>
                         </tr>
                         <tr>
                             <td>Гипсовая штукатурка стен под маяк шириной менее 50см.</td>
-                            <td class="text-right u-nowrap">7,9 м. пог</td>
-                            <td class="text-right u-nowrap">350&nbsp;₽</td>
-                            <td class="text-right u-nowrap">2 765&nbsp;₽</td>
+                            <td class="text-right u-nowrap">17,6 м. пог</td>
+                            <td class="text-right u-nowrap">340&nbsp;₽</td>
+                            <td class="text-right u-nowrap">5 984&nbsp;₽</td>
                         </tr>
                         <tr>
                             <td>Гипсовая штукатурка откосов.</td>
-                            <td class="text-right u-nowrap">14,7 м. пог</td>
-                            <td class="text-right u-nowrap">350&nbsp;₽</td>
-                            <td class="text-right u-nowrap">5 145&nbsp;₽</td>
+                            <td class="text-right u-nowrap">14,2 м. пог</td>
+                            <td class="text-right u-nowrap">340&nbsp;₽</td>
+                            <td class="text-right u-nowrap">4 828&nbsp;₽</td>
                         </tr>
                         <tr>
                             <td>Монтаж стеклотканевой сетки.</td>
@@ -1104,14 +1102,14 @@
 
 <!-- Portfolio Modal 3 -->
 <div class="app-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+            <div class="rl">
+            </div>
+        </div>
+    </div>
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
             <div class="container">
                 <div class="modal-body">
                     <h2>Коттедж в деревне Вертемяги</h2>
@@ -1152,15 +1150,18 @@
 
                     <div class="app-modal__info">
                         <div class="app-price">
-                            <p><strong>Стоимость работ:</strong> 76 480&nbsp;₽</p>
-                            <p><strong>Стоимость материалов:</strong> 70 412&nbsp;₽</p>
+                            <p><strong>Стоимость работ:</strong> 76 254&nbsp;₽</p>
+                            <p><strong>Стоимость материалов:</strong> 71 254&nbsp;₽</p>
                             <p><strong>Срок:</strong> 6 дней</p>
                             <p><strong>Площадь:</strong> 113 м²</p>
+                            <p><strong>Площадь стен:</strong> 256 м²</p>
+                            <p><strong>Площадь откосов:</strong> 53,5 м²</p>
                         </div>
                         <p class="app-description">
-                            На данном объекте нас настигли проблемы с водоснабжением. Но мы нашли выход и из этой
-                            ситуации! С помощью насосов мы накачали воду в бочки и успели завершить все работы в точно
-                            оговоренные сроки.
+                            На данном объекте нас настигли проблемы
+                            с водоснабжением. Но мы нашли выход и из этой ситуации!
+                            С помощью насосов мы накачали воду
+                            в бочки и успели завершить все работы в точно оговоренные сроки.
                         </p>
                     </div>
 
@@ -1178,127 +1179,92 @@
                         <tr>
                             <td>Профиль примыкания оконный самоклеящийся с сеткой 6 мм 2.4 м пластиковый</td>
                             <td class="text-right u-nowrap">26</td>
-                            <td class="text-right u-nowrap">152&nbsp;₽</td>
-                            <td class="text-right u-nowrap">3 952&nbsp;₽</td>
+                            <td class="text-right u-nowrap">122&nbsp;₽</td>
+                            <td class="text-right u-nowrap">3 172&nbsp;₽</td>
                         </tr>
-
                         <tr>
-                            <td>Сетка стеклотканевая ячейка 10х10 мм рулон 1х50 м Эконом</td>
+                            <td>Сетка стеклотканевая Rigor Профи ячейка 5х5 мм рулон 1х50 м</td>
                             <td class="text-right u-nowrap">1</td>
-                            <td class="text-right u-nowrap">1 873&nbsp;₽</td>
-                            <td class="text-right u-nowrap">1 873&nbsp;₽</td>
+                            <td class="text-right u-nowrap">1 715&nbsp;₽</td>
+                            <td class="text-right u-nowrap">1 715&nbsp;₽</td>
                         </tr>
-
                         <tr>
                             <td>Профиль маячковый Стандарт 6 мм 3 м 0.50 мм</td>
-                            <td class="text-right u-nowrap">137</td>
-                            <td class="text-right u-nowrap">40&nbsp;₽</td>
-                            <td class="text-right u-nowrap">5 480&nbsp;₽</td>
+                            <td class="text-right u-nowrap">90</td>
+                            <td class="text-right u-nowrap">38&nbsp;₽</td>
+                            <td class="text-right u-nowrap">3 420&nbsp;₽</td>
                         </tr>
-
-                        <tr>
-                            <td>Шпатель малярный Wenzo 100 мм с эргономичной ручкой</td>
-                            <td class="text-right u-nowrap">1</td>
-                            <td class="text-right u-nowrap">127&nbsp;₽</td>
-                            <td class="text-right u-nowrap">127&nbsp;₽</td>
-                        </tr>
-
                         <tr>
                             <td>Грунт для впитывающих оснований Миттельгрунд концентрат Кнауф 10 кг</td>
                             <td class="text-right u-nowrap">2</td>
                             <td class="text-right u-nowrap">2 082&nbsp;₽</td>
                             <td class="text-right u-nowrap">4 164&nbsp;₽</td>
                         </tr>
-
                         <tr>
-                            <td>Терка пластиковая 280х140 мм с резиновой губкой Corte</td>
-                            <td class="text-right u-nowrap">1</td>
-                            <td class="text-right u-nowrap">692&nbsp;₽</td>
-                            <td class="text-right u-nowrap">692&nbsp;₽</td>
-                        </tr>
-
-                        <tr>
-                            <td>Пленка парниковая (рукав-1,5м) 100мк</td>
+                            <td>Пленка парниковая полиэтиленовая 100мк 1.5 м рукав</td>
                             <td class="text-right u-nowrap">5</td>
                             <td class="text-right u-nowrap">53&nbsp;₽</td>
                             <td class="text-right u-nowrap">265&nbsp;₽</td>
                         </tr>
-
-
                         <tr>
-                            <td>Лента малярная 48 мм х 50 м</td>
-                            <td class="text-right u-nowrap">5</td>
-                            <td class="text-right u-nowrap">96&nbsp;₽</td>
-                            <td class="text-right u-nowrap">480&nbsp;₽</td>
+                            <td>Лента малярная Unibob 50 мм х 50 м</td>
+                            <td class="text-right u-nowrap">3</td>
+                            <td class="text-right u-nowrap">115&nbsp;₽</td>
+                            <td class="text-right u-nowrap">345&nbsp;₽</td>
                         </tr>
-
-
                         <tr>
                             <td>Мешок полипропиленовый зеленый 50х90 см</td>
-                            <td class="text-right u-nowrap">30</td>
-                            <td class="text-right u-nowrap">4,9&nbsp;₽</td>
-                            <td class="text-right u-nowrap">147&nbsp;₽</td>
+                            <td class="text-right u-nowrap">50</td>
+                            <td class="text-right u-nowrap">6&nbsp;₽</td>
+                            <td class="text-right u-nowrap">300&nbsp;₽</td>
                         </tr>
-
-
                         <tr>
                             <td>Хлопчатобумажные перчатки 4 нити с ПВХ покрытием</td>
-                            <td class="text-right u-nowrap">40</td>
-                            <td class="text-right u-nowrap">10&nbsp;₽</td>
-                            <td class="text-right u-nowrap">400&nbsp;₽</td>
+                            <td class="text-right u-nowrap">15</td>
+                            <td class="text-right u-nowrap">11&nbsp;₽</td>
+                            <td class="text-right u-nowrap">165&nbsp;₽</td>
                         </tr>
-
-
                         <tr>
                             <td>Средство универсальное WD-40, аэрозоль, 200 мл</td>
                             <td class="text-right u-nowrap">1</td>
                             <td class="text-right u-nowrap">213&nbsp;₽</td>
                             <td class="text-right u-nowrap">213&nbsp;₽</td>
                         </tr>
-
-
                         <tr>
                             <td>Правило алюминиевое трапеция 2.5 м</td>
                             <td class="text-right u-nowrap">1</td>
                             <td class="text-right u-nowrap">429&nbsp;₽</td>
                             <td class="text-right u-nowrap">429&nbsp;₽</td>
                         </tr>
-
                         <tr>
                             <td>Валик полиакрил Hardex 250 мм с рукояткой</td>
                             <td class="text-right u-nowrap">2</td>
-                            <td class="text-right u-nowrap">299&nbsp;₽</td>
-                            <td class="text-right u-nowrap">598&nbsp;₽</td>
+                            <td class="text-right u-nowrap">321&nbsp;₽</td>
+                            <td class="text-right u-nowrap">642&nbsp;₽</td>
                         </tr>
-
                         <tr>
                             <td>Профиль углозащитный штукатурный сетчатый 31х31 мм 3 м оцинкованный</td>
                             <td class="text-right u-nowrap">29</td>
                             <td class="text-right u-nowrap">58&nbsp;₽</td>
                             <td class="text-right u-nowrap">1 682&nbsp;₽</td>
                         </tr>
-
                         <tr>
                             <td>Штукатурка гипсовая машинная Knauf МП-75 30 кг</td>
                             <td class="text-right u-nowrap">151</td>
-                            <td class="text-right u-nowrap">310&nbsp;₽</td>
-                            <td class="text-right u-nowrap">46 810&nbsp;₽</td>
+                            <td class="text-right u-nowrap">342&nbsp;₽</td>
+                            <td class="text-right u-nowrap">51 642&nbsp;₽</td>
                         </tr>
-
-
                         <tr>
                             <td>Бетоконтакт Кнауф 20 кг</td>
                             <td class="text-right u-nowrap">1</td>
                             <td class="text-right u-nowrap">3 100&nbsp;₽</td>
                             <td class="text-right u-nowrap">3 100&nbsp;₽</td>
                         </tr>
-
-
                         </tbody>
                         <tfoot>
                         <tr>
                             <td colspan="4"
-                                class="text-right u-nowrap">Итого: 70 412&nbsp;₽
+                                class="text-right u-nowrap">Итого: 71 254&nbsp;₽
                             </td>
                         </tr>
                         </tfoot>
@@ -1307,7 +1273,6 @@
                     <h3>Работы</h3>
                     <table class="table">
                         <thead>
-
                         <tr>
                             <th>Наименование</th>
                             <th class="text-right">Кол-во</th>
@@ -1331,7 +1296,7 @@
                         <tr>
                             <td>Покрытие железа грунтовка 3 в 1</td>
                             <td class="text-right u-nowrap">15 м. пог</td>
-                            <td class="text-right u-nowrap">340&nbsp;₽</td>
+                            <td class="text-right u-nowrap">130&nbsp;₽</td>
                             <td class="text-right u-nowrap">1 950&nbsp;₽</td>
                         </tr>
                         </tbody>
@@ -1351,14 +1316,14 @@
 
 <!-- Call Back Modal -->
 <div class="app-modal modal fade" id="callBackModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="close-modal" data-dismiss="modal">
+        <div class="lr">
+            <div class="rl">
+            </div>
+        </div>
+    </div>
     <div class="modal-dialog">
         <div class="modal-content">
-            <div class="close-modal" data-dismiss="modal">
-                <div class="lr">
-                    <div class="rl">
-                    </div>
-                </div>
-            </div>
             <div class="modal-body">
                 <h2>Заказ обратного звонка</h2>
                 <form id="callOrderForm" class="form-inline">

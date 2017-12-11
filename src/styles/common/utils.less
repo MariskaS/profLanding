@@ -136,6 +136,11 @@
       margin-right: @spacing-double;
     }
   }
+  &-top {
+    &-base {
+      margin-top: @spacing-base;
+    }
+  }
 }
 
 .u-padding {
@@ -183,5 +188,14 @@
   // For mobile
   @media (max-width: 768px) {
     text-align: center;
+  }
+}
+
+// Show / Hide
+.u-show-mob {
+  display: none;
+
+  @media (max-width: 768px) {
+    display: block;
   }
 }

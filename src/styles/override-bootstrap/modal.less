@@ -56,16 +56,19 @@
   }
 
   .close-modal {
-    position: absolute;
+    position: fixed;
     width: 75px;
     height: 75px;
     background-color: transparent;
     top: 25px;
     right: 25px;
     cursor: pointer;
+    z-index: @z-index-modal;
+
     &:hover {
       opacity: 0.3;
     }
+
     .lr {
       height: 75px;
       width: 1px;
@@ -87,6 +90,23 @@
         -webkit-transform: rotate(90deg);
         /* Safari and Chrome */
         z-index: 1052;
+      }
+    }
+
+    @media (max-width: 768px) {
+      & {
+        width: 35px;
+        height: 35px;
+
+        .lr .rl,
+        .lr {
+          height: 35px;
+          width: 2px;
+        }
+
+        .lr {
+          margin-left: 20px;
+        }
       }
     }
   }
