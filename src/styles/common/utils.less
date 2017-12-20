@@ -1,6 +1,12 @@
 @import "../common/variables";
 @import "../common/mixins/mixins-config";
 
+.u-txt-help {
+  display: block;
+  font-size: @font-size-ss;
+  padding: @spacing-base 0 0;
+}
+
 .u-list {
   list-style: none;
   margin: 0;
@@ -43,7 +49,7 @@
         position: absolute;
         width: 83%;
         top: -20px;
-        border-bottom: 20px solid  @color-theme-orange;
+        border-bottom: 20px solid @color-theme-orange;
         border-right: 30px solid @color-white;
         border-top: 0;
         border-left: 0;
@@ -93,6 +99,10 @@
       .mixin-bg-base;
     }
   }
+}
+
+.u-txt-gray {
+  color: @color-gray;
 }
 
 // Btn
@@ -201,5 +211,12 @@
 
   @media (max-width: 768px) {
     display: block;
+  }
+}
+
+// Hack
+@media (min-width: 768px) {
+  .u-md-width-444 {
+    max-width: 444px;
   }
 }
