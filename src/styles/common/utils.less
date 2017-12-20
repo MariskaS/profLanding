@@ -1,6 +1,10 @@
 @import "../common/variables";
 @import "../common/mixins/mixins-config";
 
+.u-opacity {
+  opacity: .6;
+}
+
 .u-txt-help {
   display: block;
   font-size: @font-size-ss;
@@ -11,10 +15,6 @@
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-.u-width-62 {
-  max-width: 62px !important;
 }
 
 .u-block {
@@ -214,9 +214,30 @@
   }
 }
 
-// Hack
+// Width
+.u-width-62 {
+  max-width: 62px !important;
+}
+
 @media (min-width: 768px) {
   .u-md-width-444 {
     max-width: 444px;
+  }
+}
+
+@media (min-width: 992px) {
+  .u-md-width-480 {
+    max-width: 480px;
+  }
+
+  .u-md-width-539 {
+    max-width: 539px;
+  }
+}
+
+@media (max-width: 992px) {
+  .u-md-width-480,
+  .u-md-width-539 {
+    text-align: center;
   }
 }
