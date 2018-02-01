@@ -7,8 +7,7 @@
     var config = {
         forms: [
             {selector: '#contactForm', path: '/form/'},
-            {selector: '#orderForm', path: '/form/'},
-            {selector: '#callOrderForm', path: '/form/'},
+            {selector: '#orderForm', path: '/form/'}
         ]
     };
     var commonErrorMessage = 'Произошла ошибка. Пожалуйста, попробуйте еще раз. ';
@@ -34,6 +33,17 @@
         }
 
         alert(message || commonSuccessMessage);
+
+        if(data.formtype == "callback"){
+            yaCounter46863468.reachGoal('send_form_callback');
+        }else if(data.formtype == "contactForm"){
+            yaCounter46863468.reachGoal('send_form_measurement');
+        }else if(data.formtype == "orderForm"){
+            yaCounter46863468.reachGoal('send_form_calc');
+        }
+
+        console.log(11);
+        console.log(data);
     };
 
     /**

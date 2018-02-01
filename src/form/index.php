@@ -81,6 +81,17 @@ $headers = 'Content-type: text/html; charset=utf-8' . "\r\n" .
 
 
 mail($mailto, $subject, $message, $headers);
-echo '{"status": "ok", "message": "Ваша заявка принята. В ближайшее время мы свяжемся с Вами!"}';
+
+$reply=array(
+	status => "ok", 
+	message=>"Ваша заявка принята. В ближайшее время мы свяжемся с Вами!",
+	formtype=>$data["formtype"],
+);
+
+print json_encode($reply);
+
+#$reply=<<<END 
+#{"status": "ok", "message": "Ваша заявка принята. В ближайшее время мы свяжемся с Вами!", "formtype": "$data[formtype]"}
+#END;
 
 ?>

@@ -29,14 +29,14 @@ var path = {
         js: 'src/js/build.js',//В стилях и скриптах нам понадобятся только build файлы
         style: 'src/styles/build.less',
         img: 'src/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
-        php: 'src/form/*.php'
+        php: 'src/form/*'
     },
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
         style: 'src/style/**/*.less',
         img: 'src/img/**/*.*',
-        php: 'src/form/*.php'
+        php: 'src/form/*'
     },
     clean: './build'
 };
