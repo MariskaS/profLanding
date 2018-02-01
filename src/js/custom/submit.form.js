@@ -7,7 +7,8 @@
     var config = {
         forms: [
             {selector: '#contactForm', path: '/form/'},
-            {selector: '#orderForm', path: '/form/'}
+            {selector: '#orderForm', path: '/form/'},
+            {selector: '#callOrderForm', path: '/form/'},
         ]
     };
     var commonErrorMessage = 'Произошла ошибка. Пожалуйста, попробуйте еще раз. ';
@@ -41,9 +42,6 @@
         }else if(data.formtype == "orderForm"){
             yaCounter46863468.reachGoal('send_form_calc');
         }
-
-        console.log(11);
-        console.log(data);
     };
 
     /**
