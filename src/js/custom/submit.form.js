@@ -6,12 +6,12 @@
      */
     var config = {
         forms: [
-            {selector: '#contactForm', path: '/form/'},
-            {selector: '#orderForm', path: '/form/'},
-            {selector: '#callOrderForm', path: '/form/'},
+            {selector: '#contactForm', path: 'http://cn54416.tmweb.ru/profosnova_mail/'},
+            {selector: '#orderForm', path: 'http://cn54416.tmweb.ru/profosnova_mail/'},
+            {selector: '#callOrderForm', path: 'http://cn54416.tmweb.ru/profosnova_mail/'},
         ]
     };
-    var commonErrorMessage = 'Произошла ошибка. Пожалуйста, попробуйте еще раз. ';
+    var commonErrorMessage = 'Произошла ошибка. Пожалуйста, попробуйте еще раз.';
     var commonSuccessMessage = 'Заявка успешно отправлена. В ближайшее время мы с Вами свяжемся.';
     var ignoredFieldTypes = [
         'button', 'file', 'image', 'reset', 'submit'
