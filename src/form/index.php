@@ -6,7 +6,9 @@ error_reporting(E_ALL);
 
 
 #Config
-$mailto='alex@2347.ru, yulia@seospb.com, profosnova.spb@yandex.ru';
+$mailto='yulia@seospb.com,profosnova.spb@yandex.ru';
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Headers: Origin, X-Requested-With, Content-Type, Accept');
 header('Content-Type: application/json');
 
 $request_body = file_get_contents('php://input');
@@ -79,16 +81,16 @@ MSG;
 $headers = 'Content-type: text/html; charset=utf-8' . "\r\n" .
 			'From: Profosnova<leads@profosnova.ru>' . "\r\n";
 
-
-mail($mailto, $subject, $message, $headers);
-
-$reply=array(
-	status => "ok", 
-	message=>"Ваша заявка принята. В ближайшее время мы свяжемся с Вами!",
-	formtype=>$data["formtype"],
-);
-
-print json_encode($reply);
+if($_SERVER['REQUEST_METHOD'] == 'POST' or $_SERVER['REQUEST_METHOD'] == 'GET'){
+    mail($mailto, $subject, $message, $headers);
+    
+    $reply=array(
+    	status => "ok", 
+    	message=>"Ваша заявка принята. В ближайшее время мы свяжемся с Вами!",
+    	formtype=>$data["formtype"],
+    );
+    print json_encode($reply);
+}
 
 #$reply=<<<END 
 #{"status": "ok", "message": "Ваша заявка принята. В ближайшее время мы свяжемся с Вами!", "formtype": "$data[formtype]"}
