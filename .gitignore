@@ -7,3 +7,4 @@ build
 /.idea/workspace.xml
 /.idea/*.iml
 /.idea/*.xml
+.DS_Store
